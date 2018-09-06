@@ -1,8 +1,8 @@
 var WINDOW_WIDTH =1024;
-var WINDOW_HEIGHT =500;
+var WINDOW_HEIGHT =350;
 var RADIUS=7;
 var MARGIN_LEFT=0;
-var MARGIN_TOP=100;
+var MARGIN_TOP=50;
 // var LAST_TIME= new Date(2018,7,26,23,30,12);
 var LAST_TIME= new Date()
 LAST_TIME.setTime(LAST_TIME.getTime() + 5*1000)
@@ -12,7 +12,6 @@ var balls = [];
 var colors = ['red','blue','yellow','black','purple','green','gray'];
 
 window.onload = function() {
-
 	WINDOW_WIDTH=document.body.clientWidth;
 	MARGIN_LEFT=Math.round(WINDOW_WIDTH/10);
 	RADIUS=Math.round(WINDOW_WIDTH*4/5/108)-1;
@@ -65,9 +64,7 @@ function update(){
 		}
 		SHOW_TIME=nextShowTime;
 	}
-	updateBalls();
-	console.log(balls.length)
-	
+	updateBalls();	
 }
 
 function updateBalls(){
